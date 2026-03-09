@@ -1,6 +1,6 @@
 ---
 name: solana-dev
-description: End-to-end Solana development playbook. Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat. Covers wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists. Use when user asks to "build a Solana dapp", "write an Anchor program", "create a token", "debug Solana errors", "set up wallet connection", "test my Solana program", or "deploy to devnet".
+description: Use when user asks to "build a Solana dapp", "write an Anchor program", "create a token", "debug Solana errors", "set up wallet connection", "test my Solana program", or "deploy to devnet". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries.
 user-invocable: true
 license: MIT
 compatibility: Requires Node.js 18+, Rust toolchain, Solana CLI, Anchor CLI
