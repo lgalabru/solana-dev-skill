@@ -339,7 +339,7 @@ This is not an exploit. It is a feature being misused.
 
 **Risk**: Token-2022 lets mints be closed via the MintCloseAuthority extension. A closed mint can be recreated at the same address with different extensions.
 
-**Attack**: An attacker creates token accounts while the mint has no extensions. Mint gets closed and reinitialized with NonTransferable or TransferFee. Those old token accounts still work — with the old rules. Soulbound tokens that aren't soulbound. Transfer fees that don't apply to pre-existing accounts. KYC-frozen mints bypassed by accounts created before the freeze was set.
+**Attack**: An attacker creates token accounts while the mint has no extensions. Mint gets closed and reinitialized with NonTransferable or TransferFee. Those old token accounts still work — with the old rules. Soulbound tokens that aren't soulbound. Transfer fees that could brick deposit related flows by causing all transactions to fail. KYC-frozen mints bypassed by accounts created before the freeze was set. Additionally, if the mint’s decimals are changed, it could result in incorrect accounting.
 
 **Prevention**: Checking if a mint currently has no close authority is not enough. You need to verify it was never reinitialized.
 
